@@ -17,6 +17,7 @@ eggs/
 lib/
 bin/
 include/
+pyenv.cfg
 lib64/
 parts/
 sdist/
