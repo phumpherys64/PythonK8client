@@ -13,8 +13,15 @@ Purpose:
  Demo is present at https://www.youtube.com/@fahdmirza
 
 setup .gitignore
+ lib/
+ bin/
+ include/
 
-python3 -m venv .
-source ./bin/activate
-pip3 install kubernetes
+setup:
+ python3 -m venv .
+ source ./bin/activate
+ pip3 install kubernetes
 
+
+run:
+ python3 knodes.py
