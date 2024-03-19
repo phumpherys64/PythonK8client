@@ -11,3 +11,10 @@ Purpose:
  - kubectl utility to verify the resources (Optional)
  
  Demo is present at https://www.youtube.com/@fahdmirza
+
+setup .gitignore
+
+python3 -m venv .
+source ./bin/activate
+pip3 install kubernetes
+
