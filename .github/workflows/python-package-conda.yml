@@ -16,6 +16,7 @@ jobs:
     - name: Create and activate conda env
       run: |
         #
+        conda init && echo "conda init"
         myenv=`basename "$PWD"`
         conda create --name $myenv -y
         echo "Activating $myenv"
