@@ -42,7 +42,7 @@ conda activate $myenv
 ### Installing Kubernetes 
 **Link**:  [kubernetes-feedstock/README.md at main · conda-forge/kubernetes-feedstock](https://github.com/conda-forge/kubernetes-feedstock/blob/main/README.md#installing-kubernetes)
 
-**Github** repo:
+**Github b** repo:
 [conda-forge/kubernetes-feedstock: A conda-smithy repository for kubernetes.](https://github.com/conda-forge/kubernetes-feedstock.git)
 
 ```sh
@@ -83,13 +83,21 @@ unset MY_FILE
 > When you run conda activate analytics, the environment variables MY_KEY and MY_FILE are set to the values you wrote into the file. When you run conda deactivate, those variables are erased.
 
 ##### Export your active environment to a new file:
-
 ```bash
 conda env export > environment.yml
 ```
+
+
+This
 
 - - -
 #python
 #kubernetes
 #github 
-✉️ [email Philip Humpherys](mailto:phumpherys@gmail.com)
+- - -
+### Mar 20, 2024
+![](732593856.jpeg)
+##### This is a selfie my daughter H (*Mika*) took this morning after she woke up in Japan today!
+
+ 👧❤️🇯🇵
+#japan 
