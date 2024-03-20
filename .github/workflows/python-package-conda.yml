@@ -13,10 +13,13 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: '3.12.2'
+    - name: conda init
+      run: |
+      conda init --all && echo "conda init"
     - name: Create and activate conda env
       run: |
         #
-        conda init && echo "conda init"
+        conda init --all && echo "conda init"
         myenv=`basename "$PWD"`
         conda create --name $myenv -y
         echo "Activating $myenv"
