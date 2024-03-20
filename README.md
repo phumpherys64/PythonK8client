@@ -24,7 +24,6 @@ Kubernetes Python client is used to perform operations on Kubernetes resources i
 
 TODO
 * conda
-
 - - -
 ## conda notes
 
@@ -93,13 +92,4 @@ conda env export > environment.yml
 #python
 #kubernetes
 #github 
-✉️ phumpherys@gmail.com
-=======
-
-✉️ phumpherys@gmail.com
-
-#python
-#kubernetes
-#github 
-
-
+✉️ [email Philip Humpherys](mailto:phumpherys@gmail.com)
