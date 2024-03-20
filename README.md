@@ -96,8 +96,18 @@ This
 #github 
 - - -
 ### Mar 20, 2024
+
+
+
+
+##### This is a selfie my daughter H (*Mika*) took this morning after she woke up in Japan today!
+
+ 👧❤️🇯🇵
+#japan ![](732593856.jpg)
+=======
 ![](732593856.jpeg)
 ##### This is a selfie my daughter H (*Mika*) took this morning after she woke up in Japan today!
 
  👧❤️🇯🇵
 #japan 
+
