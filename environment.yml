@@ -1,0 +1,10 @@
+name: PythonK8client
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - kubernetes=1.23.6=h694c41f_0
+  - kubernetes-client=1.23.6=h12d39d3_0
+  - kubernetes-node=1.23.6=h12d39d3_0
+  - kubernetes-server=1.23.6=h12d39d3_0
+prefix: /usr/local/Caskroom/miniconda/base/envs/PythonK8client

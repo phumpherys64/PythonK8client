@@ -1,0 +1,23 @@
+ 1002  cd MyCode
+ 1003  clear
+ 1004  cd PythonK8client
+ 1005  clear
+ 1006  ls
+ 1007  cat pyvenv.cfg
+ 1008  clear
+ 1009  ls
+ 1010  ls
+ 1011  rm pyvenv.cfg
+ 1012  conda env list
+ clear
+ conda init --help
+ conda info --envs
+ conda list -n base
+ conda list
+
+ conda create --name $myenv
+ conda activate myenv
+ conda activate $myenv
+ conda config --add channels conda-forge
+ conda config --set channel_priority strict
+ conda install kubernetes kubernetes-client kubernetes-node kubernetes-server

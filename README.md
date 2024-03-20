@@ -24,24 +24,48 @@ Kubernetes Python client is used to perform operations on Kubernetes resources i
 
 TODO
 * conda
-
-✉️ phumpherys@gmail.com
-
 - - -
+## conda notes
 
-### macOS and Linux
-##### Locate the directory for the conda environment in your terminal window by running in the terminal echo $CONDA_PREFIX.
+### Link:
+[Managing environments — conda 24.1.3.dev68 documentation](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment)
+
+### To create and activate an environment: 
+#### Set *$myenv* to repo name and create new Conda environment :
+
+```sh
+myenv=`basename "$PWD"`
+conda create --name $myenv -y
+conda activate $myenv
+```
+
+### Installing Kubernetes 
+**Link**:  [kubernetes-feedstock/README.md at main · conda-forge/kubernetes-feedstock](https://github.com/conda-forge/kubernetes-feedstock/blob/main/README.md#installing-kubernetes)
+
+**Github** repo:
+[conda-forge/kubernetes-feedstock: A conda-smithy repository for kubernetes.](https://github.com/conda-forge/kubernetes-feedstock.git)
+
+```sh
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+#
+conda install kubernetes kubernetes-client kubernetes-node kubernetes-server -y
+conda install python-kubernetes -y
+
+python3 knodes.py
+```
+
+##### for macOS and Linux:  Locate the directory for the conda environment in your terminal window by running in the terminal echo $CONDA_PREFIX.
 ##### Enter that directory and create these subdirectories and files:
-```bash
+```sh
 cd $CONDA_PREFIX
 mkdir -p ./etc/conda/activate.d
 mkdir -p ./etc/conda/deactivate.d
 touch ./etc/conda/activate.d/env_vars.sh
 touch ./etc/conda/deactivate.d/env_vars.sh
-```
 
 ##### Edit ./etc/conda/activate.d/env_vars.sh as follows:
-```bash
+```sh
 #!/bin/sh
 
 export MY_KEY='secret-key-value'
@@ -49,7 +73,7 @@ export MY_FILE=/path/to/my/file/
 ```
 
 ##### Edit ./etc/conda/deactivate.d/env_vars.sh as follows:
-```bash
+```sh
 #!/bin/sh
 
 unset MY_KEY
@@ -68,4 +92,4 @@ conda env export > environment.yml
 #python
 #kubernetes
 #github 
-
+✉️ phumpherys@gmail.com
