@@ -18,11 +18,12 @@ jobs:
         #
         myenv=`basename "$PWD"`
         conda create --name $myenv -y
-        conda activate $myenv
+        echo "Activating $myenv"
+        conda activate $myenv && echo "activated"
         # conda env update --file environment.yml --name $myenv
     - name: Install python-kubernetes
       run: |
-        # foo
+        echo "Installing python-kubernetes"
         conda config --add channels conda-forge 
         conda config --set channel_priority strict
         conda install kubernetes kubernetes-client kubernetes-node kubernetes-server -y
