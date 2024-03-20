@@ -25,6 +25,8 @@ Kubernetes Python client is used to perform operations on Kubernetes resources i
 TODO
 * conda
 
+✉️ phumpherys@gmail.com
+
 #python
 #kubernetes
 #github 
