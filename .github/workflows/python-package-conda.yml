@@ -15,23 +15,26 @@ jobs:
         python-version: '3.12.2'
     - name: conda init
       run: |
-      conda init --all && echo "conda init"
+      conda init --all
+      echo "conda init"
     - name: Create and activate conda env
       run: |
         #
-        conda init --all && echo "conda init"
+        conda init --all
+        echo "conda init"
         myenv=`basename "$PWD"`
         conda create --name $myenv -y
         echo "Activating $myenv"
-        conda activate $myenv && echo "activated"
+        conda activate $myenv
+        echo "activated"
         # conda env update --file environment.yml --name $myenv
     - name: Install python-kubernetes
       run: |
         echo "Installing python-kubernetes"
         conda config --add channels conda-forge 
         conda config --set channel_priority strict
-        conda install kubernetes kubernetes-client kubernetes-node kubernetes-server -y
-        conda install python-kubernetes -y
+        conda install kubernetes kubernetes-client kubernetes-node kubernetes-server python-kubernetes -y
+        # conda install python-kubernetes
     # - name: Install dependencies
     #   run: |
     #     conda env update --file environment.yml --name base
