@@ -22,6 +22,9 @@ Kubernetes Python client is used to perform operations on Kubernetes resources i
 * Test by running `python3 knodes.py`
 * To deactivate venv:  `deactivate`
 
+TODO
+* conda
+
 #python
 #kubernetes
 #github 
