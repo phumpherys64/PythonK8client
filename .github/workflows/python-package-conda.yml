@@ -14,13 +14,23 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: '3.12.2'
-    - name: Add conda to system path
+        - name: Create and activate conda env
       run: |
-        # $CONDA is an environment variable pointing to the root of the miniconda directory
-        echo $CONDA/bin >> $GITHUB_PATH
-    - name: Install dependencies
+        #
+        myenv=`basename "$PWD"`
+        conda create --name $myenv -y
+        conda activate $myenv
+        # conda env update --file environment.yml --name $myenv
+    - name: Install python-kubernetes
       run: |
-        conda env update --file environment.yml --name base
+        # foo
+        conda config --add channels conda-forge 
+        conda config --set channel_priority strict
+        conda install kubernetes kubernetes-client kubernetes-node kubernetes-server -y
+        conda install python-kubernetes -y
+    # - name: Install dependencies
+    #   run: |
+    #     conda env update --file environment.yml --name base
     - name: Lint with flake8
       run: |
         conda install flake8
