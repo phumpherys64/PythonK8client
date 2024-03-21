@@ -95,9 +95,12 @@ conda env export > environment.yml
 ### Mar 20, 2024
 ##### This is a selfie my daughter H (*Mika*) took this morning after she woke up in Japan today!![](732593856.jpg)
  👧❤️🇯🇵
+
 #japan 
 - - -
 ### My Animal Crossing island!  It is called:
 ### 64^2
 ![](IMG_3801.jpeg)
+
+
 #animalcrossing
